@@ -1,0 +1,16 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.white-box {
+  background-image: url(./images/bg-pattern-desktop.svg);
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  background-image: url(./images/illustration-woman-online-desktop.svg);
+  height: 100%;
+}
