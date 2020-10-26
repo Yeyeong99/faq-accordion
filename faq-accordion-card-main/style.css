@@ -3,14 +3,53 @@
 ::after {
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
 
 .white-box {
-  background-image: url(./images/bg-pattern-desktop.svg);
   display: flex;
   justify-content: space-between;
+  background-color: white;
+  height: 600px;
+  width: 1000px;
+  border-radius: 25px;
 }
 
 .image {
-  background-image: url(./images/illustration-woman-online-desktop.svg);
-  height: 100%;
+  margin-right: 120px;
+  display: flex;
+  align-items: center;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-position-x: 110%;
+  background-position-y: 70%;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.a-box {
+  position: absolute;
+  top: 250px;
+  left: -130px;
+  z-index: 2;
+}
+
+.desktop {
+  display: block;
+  position: relative;
+  margin-left: -80px;
+}
+
+.faq {
+  width: 500px;
 }
