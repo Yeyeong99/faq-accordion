@@ -3,12 +3,14 @@
 ::after {
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .container {
@@ -22,14 +24,15 @@ body {
   height: 600px;
   width: 1000px;
   border-radius: 25px;
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
 }
 
-.image {
-  margin-right: 120px;
+.image-box {
   display: flex;
   align-items: center;
   background-image: url(./images/bg-pattern-desktop.svg);
-  background-position-x: 110%;
+  background-position-x: 115%;
   background-position-y: 70%;
   background-repeat: no-repeat;
   height: 600px;
@@ -50,6 +53,26 @@ body {
   margin-left: -80px;
 }
 
-.faq {
+.faq-section {
+  margin: 100px 70px 0;
   width: 500px;
+  color: hsl(237, 12%, 33%);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+.ask {
+  margin-bottom: 20px;
+  border-bottom: 3px solid hsl(240, 5%, 91%);
+}
+
+.title {
+  padding-bottom: 12px;
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+}
+
+.explain {
+  display: none;
 }
