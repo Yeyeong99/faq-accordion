@@ -69,13 +69,21 @@ h1 {
   border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 
-.title {
+.title,
+.hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 16px;
   font-size: 0.9rem;
+}
+
+.title {
   color: hsl(237, 12%, 33%);
+}
+
+.hover {
+  color: hsl(14, 88%, 65%);
 }
 
 .explain {
@@ -84,8 +92,4 @@ h1 {
 
 .show {
   display: "";
-}
-
-.hover {
-  color: hsl(14, 88%, 65%);
 }
