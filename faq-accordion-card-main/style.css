@@ -57,6 +57,7 @@ body {
   margin: 100px 70px 0;
   width: 500px;
   color: hsl(237, 12%, 33%);
+  overflow: hidden;
 }
 
 h1 {
@@ -80,6 +81,7 @@ h1 {
 
 .title {
   color: hsl(237, 12%, 33%);
+  cursor: pointer;
 }
 
 .button {
@@ -90,16 +92,21 @@ h1 {
   color: hsl(14, 88%, 65%);
 }
 
-dt {
-  cursor: pointer;
-}
-
 .explain {
   display: none;
   margin: 16px 0px;
   font-size: 0.8rem;
   line-height: 1.2rem;
   transition: 0.5s;
+}
+
+.title.show {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.title.show > img {
+  transform: rotate(-180deg);
 }
 
 .show {
