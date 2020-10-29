@@ -1,19 +1,28 @@
 const title = document.querySelectorAll(".title");
 const explain = document.querySelectorAll(".explain");
+const button = document.querySelectorAll(".button");
 
-
-for (i=0; i<title.length; i++) {
+for (i=0; i<=title.length; i++) {
     title[i].addEventListener("mouseenter",function(){
         this.classList.add("hover");
     }),
     title[i].addEventListener("mouseleave",function(){
         this.classList.remove("hover");
     }),
-    title[i].addEventListener("click", function(){
-        this.classList.toggle("show");
-        this.nextElementSibling.classList.toggle("explain");
-        this.nextElementSibling.classList.toggle("show");
-        title.not(this).nextElementSibling.classList.remove("show");
-        title.not(this).classList.remove("show");
+    title[i].addEventListener("click", function(event){ //event 가 클릭했을 때 target을 알 수 있게 해줌
+        if (this.classList.contains("show")) {
+            this.classList.remove("show");
+            this.nextElementSibling.classList.remove("show");
+        } else {
+            for (j=0; j<=0; j++) {
+                this.classList.add("show");
+                this.nextElementSibling.classList.add("show");
+                explain[j].previousElementSibling.classList.remove("show");
+                explain[j].classList.remove("show");
+            }
+
+        }
     })
 };
+
+
