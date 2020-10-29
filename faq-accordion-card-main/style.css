@@ -75,21 +75,24 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 16px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .title {
   color: hsl(237, 12%, 33%);
 }
 
+.button {
+  padding: 8px;
+}
+
 .hover {
   color: hsl(14, 88%, 65%);
 }
 
-.explain {
+dd {
   display: none;
-}
-
-.show {
-  display: "";
+  margin: 16px 0px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
 }
