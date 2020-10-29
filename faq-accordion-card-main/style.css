@@ -84,6 +84,11 @@ h1 {
 .title {
   color: hsl(237, 12%, 33%);
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.title:hover {
+  padding-left: 20px;
 }
 
 .button {
@@ -95,11 +100,12 @@ h1 {
 }
 
 .explain {
-  display: none;
-  margin: 16px 0px;
+  height: 0px;
   font-size: 0.8rem;
   line-height: 1.2rem;
   transition: 0.5s;
+  margin-left: 0;
+  overflow: hidden;
 }
 
 .title.show {
@@ -112,8 +118,9 @@ h1 {
 }
 
 .show {
-  display: "";
+  height: 50px;
   margin: 16px 0px;
   font-size: 0.8rem;
   line-height: 1.2rem;
+  transition: 0.5s;
 }
