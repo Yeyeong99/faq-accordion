@@ -90,8 +90,20 @@ h1 {
   color: hsl(14, 88%, 65%);
 }
 
-dd {
+dt {
+  cursor: pointer;
+}
+
+.explain {
   display: none;
+  margin: 16px 0px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  transition: 0.5s;
+}
+
+.show {
+  display: "";
   margin: 16px 0px;
   font-size: 0.8rem;
   line-height: 1.2rem;

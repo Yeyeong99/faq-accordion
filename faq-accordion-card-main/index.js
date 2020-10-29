@@ -1,36 +1,22 @@
 
 const askBox = document.querySelectorAll(".ask");
-const title = askBox.querySelectorAll(".title");
-const explain = askBox.querySelectorAll(".explain");
-const button = askBox.querySelectorAll(".button")
+const title = document.querySelectorAll(".title");
+const explain = document.querySelectorAll(".explain");
 
-title.forEach(function(eachBtn) {
-    eachBtn.addEventListener("click",handleTitle)
-    
-});
 
-function handleTitle(eachBtn) {
-    const 
-}
-// const handleTitle = {
-//     hover: function() {
-//         title.classList.add("hover");
-//     },
-//     leave: function() {
-//         title.classList.remove("hover");
-//     },
-//     enter: function() {
-//         title.classList.remove("hover");
-//         explain.classList.remove("explain")
-//         explain.classList.add("show");
-//     },
-//     back : function() {
-//         explain.classList.remove("show")
-//         explain.classList.add("explain")
-//     }
-// }
-
-// title.addEventListener("mouseenter",handleTitle.hover);
-// title.addEventListener("mouseleave",handleTitle.leave);
-// title.addEventListener("click", handleTitle.enter);
-// button.addEventListener("click",handleTitle.back);
+for (i=0; i<title.length; i++) {
+    title[i].addEventListener("mouseenter",function(){
+        this.classList.add("hover");
+    }),
+    title[i].addEventListener("mouseleave",function(){
+        this.classList.remove("hover");
+    }),
+    title[i].addEventListener("click", function(){
+        for (n=0; n<explain.length; n++){
+            explain[i].addEventListener("mouseenter", function() {
+                this.classList.toggle("explain");
+                this.classList.toggle("show");
+            })
+        }
+    })
+};
