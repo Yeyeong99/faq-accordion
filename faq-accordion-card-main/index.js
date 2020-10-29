@@ -10,17 +10,11 @@ for (i=0; i<=title.length; i++) {
         this.classList.remove("hover");
     }),
     title[i].addEventListener("click", function(event){ //event 가 클릭했을 때 target을 알 수 있게 해줌
-        if (this.classList.contains("show")) {
-            this.classList.remove("show");
-            this.nextElementSibling.classList.remove("show");
-        } else {
-            for (j=0; j<=0; j++) {
-                this.classList.add("show");
-                this.nextElementSibling.classList.add("show");
-                explain[j].previousElementSibling.classList.remove("show");
-                explain[j].classList.remove("show");
-            }
-
+        for (j=0; j<=explain.length; j++){
+            this.classList.add("show");
+            this.nextElementSibling.classList.add("show");
+            explain[j].previousElementSibling.classList.remove("show");
+            explain[j].classList.remove("show");
         }
     })
 };
